@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b80910a65c.js" crossorigin="anonymous"></script>
     <title>PSD to HTML</title>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
 
-    
+
 </head>
+
 <body>
     <header>
         <div class="logo">LOGO</div>
@@ -25,7 +28,7 @@
         </nav>
         <div class="cart"><i class="fa-solid fa-cart-shopping"></i>Your Cart</div>
     </header>
-    
+
     <section class="services">
         <h2>Examples of Services or Products</h2>
         <div class="service-items">
@@ -35,39 +38,81 @@
         </div>
         <button class="shop-now">Shop Now</button>
     </section>
-    
+
     <section class="featured-products">
         <h2>Featured Products</h2>
         <div class="carousel">
             <div class="arrow left">&lt;</div>
-            <img class="featured-item" src="https://placehold.co/400x300"><br></img>
-            <img class="featured-item" src="https://placehold.co/400x300"><br></img>
+            <div class="featured-item-container">
+                <img class="featured-item" src="https://placehold.co/400x300" alt="Product Image">
+                <div class="product-name">Product Name<br>£100</div>
+            </div>
+
+            <div class="featured-item-container">
+                <img class="featured-item" src="https://placehold.co/400x300" alt="Product Image">
+                <div class="product-name">Product Name<br>£100</div>
+            </div>
             <div class="arrow right">&gt;</div>
         </div>
     </section>
-    
+
+
+    <hr>
+
     <section class="newsletter">
+    <div class="newsletter-text">
         <h2>News Letter</h2>
-        <p>A short description that invites users to sign up for weekly news on what the latest products and services.</p>
-        <div class="newsletter-signup">
-            <input type="email" placeholder="Email Address">
-            <button class="subscribe">Subscribe</button>
-        </div>
+        <p>A short description that invites users to sign up for weekly news on what the latest products and services.
+        </p>
+    </div>
+    <div class="newsletter-signup">
+        <input type="email" placeholder="Email Address">
+        <button class="subscribe">Subscribe</button>
+    </div>
     </section>
-    
+
+    <hr>
+
     <section class="product-list">
-        <div class="product-item">Product Name<br>£100</div>
-        <div class="product-item">Product Name<br>£100</div>
-        <div class="product-item">Product Name<br>£100</div>
-        <div class="product-item">Product Name<br>£100</div>
-        <div class="product-item">Product Name<br>£100</div>
+        <div id="product-1" class="product-item">
+            <img src="https://placehold.co/400x400" alt="Product Image">
+            <div class="product-info">
+                Product Name<br>£100
+            </div>
+        </div>
+        <div id="product-2" class="product-item">
+            <img src="https://placehold.co/200x200" alt="Product Image">
+            <div class="product-info">
+                Product Name<br>£100
+            </div>
+        </div>
+        <div id="product-3" class="product-item">
+            <img src="https://placehold.co/200x200" alt="Product Image">
+            <div class="product-info">
+                Product Name<br>£100
+            </div>
+        </div>
+        <div id="product-4" class="product-item">
+            <img src="https://placehold.co/200x200" alt="Product Image">
+            <div class="product-info">
+                Product Name<br>£100
+            </div>
+        </div>
+        <div id="product-5" class="product-item">
+            <img src="https://placehold.co/200x200" alt="Product Image">
+            <div class="product-info">
+                Product Name<br>£100
+            </div>
+        </div>
     </section>
     
     <section class="about">
         <h2>About Your Shop</h2>
-        <p>Here is where you can try and captivate the users by providing them with some background to your shop’s existence. Your mission as an online shop and your vision for the future of your shop, products and services.</p>
+        <p>Here is where you can try and captivate the users by providing them with some background to your shop’s
+            existence. Your mission as an online shop and your vision for the future of your shop, products and
+            services.</p>
     </section>
-    
+
     <footer>
         <div class="footer-logo">
             <div class="logo">LOGO</div>
@@ -104,4 +149,5 @@
         </div>
     </footer>
 </body>
+
 </html>

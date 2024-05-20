@@ -49,7 +49,7 @@ header nav a {
     padding: 10px;
 }
 
-.fa-cart-shopping{
+.fa-cart-shopping {
     display: flex;                  
     align-items: center;            
     justify-content: center;        
@@ -66,12 +66,10 @@ header .cart {
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    /* border: 1px solid #ccc; */
-    border-radius: 4px;
     white-space: nowrap;  /* Ensure the text does not wrap */
 }
 
-.services{
+.services {
     background-color: #a0a0a0;
 }
 
@@ -80,7 +78,7 @@ header .cart {
     text-align: center;
 }
 
-.services h2, .featured-products h2, .newsletter h2, .about h2 {
+.services h2, .featured-products h2, .about h2 {
     margin-bottom: 50px;
     margin-top: 50px;
 }
@@ -91,7 +89,7 @@ header .cart {
     align-items: center;
 }
 
-.service-item, .product-item, .featured-item {
+.service-item, .featured-item {
     background: #ddd;
     margin: 0 20px;
     display: flex;
@@ -102,7 +100,8 @@ header .cart {
 }
 
 .shop-now {
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     padding: 10px 100px;
     font-size: 30px;
     cursor: pointer;
@@ -121,10 +120,42 @@ header .cart {
     user-select: none;
 }
 
+.product-name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.newsletter-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 550px;
+}
+
+.newsletter-text h2 {
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+
+.newsletter-text p {
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+}
+
 .newsletter-signup {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 10px;
 }
 
 .newsletter-signup input {
@@ -135,9 +166,48 @@ header .cart {
 }
 
 .subscribe {
-    padding: 10px 20px;
+    padding: 10px 50px;
     font-size: 16px;
     cursor: pointer;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
+    grid-template-rows: repeat(2, auto); /* Create 2 rows */
+    gap: 10px;
+    padding: 20px;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#product-1 {
+    grid-row: span 2; 
+}
+
+#product-2, #product-3, #product-4, #product-5 {
+    grid-column: span 1; /* Span 1 column */
+    grid-row: span 1; /* Span 1 row */
+    width: 200px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-info {
+    margin-top: 10px;
+    text-align: center;
 }
 
 .about p {
