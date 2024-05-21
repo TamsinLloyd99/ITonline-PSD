@@ -73,17 +73,17 @@ header .cart {
     background-color: #a0a0a0;
 }
 
-.services, .featured-products, .newsletter, .product-list, .about {
+.services, .featured-products, .newsletter, .about {
     padding: 20px;
     text-align: center;
 }
 
-.services h2, .featured-products h2, .about h2 {
+.services h2, .featured-products h2{
     margin-bottom: 50px;
     margin-top: 50px;
 }
 
-.service-items, .product-list, .carousel {
+.service-items, .carousel {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,7 +148,7 @@ header .cart {
 .newsletter-text p {
     font-size: 20px;
     text-align: left;
-    margin: 0;
+    margin: 0 0 10px;
 }
 
 .newsletter-signup {
@@ -173,7 +173,7 @@ header .cart {
 
 .product-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
+    grid-template-columns: repeat(4, 1fr); /* Create a 3-column grid */
     grid-template-rows: repeat(2, auto); /* Create 2 rows */
     gap: 10px;
     padding: 20px;
@@ -184,42 +184,51 @@ header .cart {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid #ccc; */
-    border-radius: 8px;
     padding: 10px;
 }
 
 #product-1 {
+    grid-column: span 2;
     grid-row: span 2; 
 }
 
 #product-2, #product-3, #product-4, #product-5 {
-    grid-column: span 1; /* Span 1 column */
-    grid-row: span 1; /* Span 1 row */
-    width: 200px;
-}
-
-.product-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    grid-column: span 1; 
+    grid-row: span 1; 
 }
 
 .product-info {
     margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
+}
+
+.about h2{
+margin: 20px;
 }
 
 .about p {
     max-width: 600px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding-top: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.logo-image{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+margin-bottom: 5px;
 }
 
 .footer-logo {
@@ -234,6 +243,7 @@ footer {
 
 .footer-column {
     margin: 0 20px;
+    text-align: left;
 }
 
 .footer-column h3 {
@@ -247,18 +257,19 @@ footer {
     margin: 5px 0;
 }
 
-.social-media a {
-    display: inline-block;
-    margin: 0 10px;
-    color: #fff;
-    text-decoration: none;
+#social-media{
+    list-style: none;
 }
 
-.social-media {
-    margin-top: 20px;
+.fa-brands{
+    margin-right: 10px;
 }
 
 .copyright {
-    margin-top: 20px;
+    
+    text-align: center;
+    padding: 10px;
     font-size: 14px;
+    background-color: #242323;
+    color: #fff;
 }
